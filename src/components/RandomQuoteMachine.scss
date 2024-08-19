@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+$primary-color: #000; // Updated primary color (Black)
+$secondary-color: #fff;
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.5s;
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+#quote-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px; // Increased border radius for a softer look
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); // More prominent box shadow
+
+  .loading {
+    color: $primary-color;
+  }
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+.quote-text {
+  font-size: 2rem; // Larger font size for the quote
+  margin-bottom: 20px;
+  font-weight: 500; // Increased font weight for emphasis
+}
+
+.quote-author {
+  font-size: 1.2rem; // Font size for the author
+  font-style: italic;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-media-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px; // Added gap between social media buttons
+}
+
+#tweet-quote,
+#instagram-quote {
+  background-color: transparent; // Make social media buttons transparent
+  border: none;
+  padding: 0; // Remove padding from social media buttons
+  font-size: 1.5rem; // Adjust font size for social media buttons
+}
+
+#tweet-quote:hover,
+#instagram-quote:hover {
+  color: $primary-color; // Change text color on hover for social media buttons
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  font-size: 0.8em;
+  color: $secondary-color;
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+}
